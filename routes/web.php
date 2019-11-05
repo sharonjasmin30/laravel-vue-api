@@ -11,6 +11,6 @@
 |
 */
 
-Route::get('/', function () {
+Route::get('/{optional?}', function () {
     return view('index');
 });

@@ -17,4 +17,9 @@ class PostController extends Controller
         return Post::orderBy('id','DESC')->paginate();
     }
 
+    public function show($slug)
+    {
+        return Post::where('slug', $slug)->first();
+    }
+
 }
